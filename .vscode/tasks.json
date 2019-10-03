@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "moto build",
+      "command": "/usr/bin/clang++",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "args": [
+        "-g",
+        "${workspaceFolder}/main.cpp",
+        "-o",
+        "${workspaceFolder}/moto",
+        "-std=c++17",
+        "-stdlib=libc++",
+        "--debug"
+      ],
+      "options": {
+        "cwd": "/usr/bin"
+      }
+    }
+  ]
+}
