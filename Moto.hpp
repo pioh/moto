@@ -11,10 +11,14 @@ class MotoBody
 {
 public:
     Point position;
-    Direction direction;
-    double angle;
     Vector speed;
-    double angle_speed;
+
+    Direction direction;
+    Direction direction_speed;
+
+    double tilt;
+    double tilt_speed;
+
     double mass;
     double length;
 };
